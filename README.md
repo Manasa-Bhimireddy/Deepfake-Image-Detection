@@ -78,15 +78,15 @@ The system accepts an image as input, preprocesses it, and passes it through a t
 ```bash
 DeepFake-Image-Detection/
 │
-├── frontend/
-│   ├── src/
-│   ├── public/
-│   └── package.json
+├── src/
+│   ├── components/
+│   ├── pages/
+│   └── App.jsx
 │
 ├── backend/
 │   ├── app.py
-│   ├── model/
-│   ├── routes/
+│   ├── main.py
+│   ├──node_modules/
 │   └── requirements.txt
 │
 ├── extension/
@@ -130,7 +130,7 @@ The model was trained using a customized dataset created from multiple sources:
 
 - Intel Core i7 Processor
 - 16 GB RAM
-- NVIDIA GPU (for training)
+
 
 ---
 
@@ -152,12 +152,14 @@ cd backend
 pip install -r requirements.txt
 
 python app.py
+
+python main.py
 ```
 
 ### Frontend Setup
 
 ```bash
-cd frontend
+
 
 npm install
 
