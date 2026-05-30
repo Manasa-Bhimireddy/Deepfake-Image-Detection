@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+  <head>
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- TOP BAR -->
+      <div class="top-bar">
+        <div class="title">Deepfake Detector AI</div>
+        <div id="closeBtn" class="close-btn">✕</div>
+      </div>
+
+      <!-- IMAGE PREVIEW -->
+      <img id="preview" />
+
+      <!-- FILE INPUT -->
+      <label class="file-label">
+        Choose Image
+        <input type="file" id="fileInput" hidden />
+      </label>
+
+      <!-- CHECK BUTTON -->
+      <button id="checkBtn" class="check-btn">Check Image</button>
+
+      <!-- RESET BUTTON -->
+      <button id="resetBtn" class="reset-btn">Reset</button>
+
+      <!-- RESULT -->
+      <div id="result" class="result"></div>
+    </div>
+
+    <script src="popup.js"></script>
+  </body>
+</html>

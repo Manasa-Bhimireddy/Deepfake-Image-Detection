@@ -1,0 +1,117 @@
+body{
+    margin:0;
+    background:#020617;
+    font-family:Segoe UI;
+    width:320px;
+    color:white;
+}
+
+.container{
+    padding:15px;
+}
+
+/* TOP BAR */
+
+.top-bar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:10px;
+}
+
+.title{
+    color:#00eaff;
+    font-size:16px;
+    font-weight:bold;
+}
+
+.close-btn{
+    background:#00eaff;
+    color:#020617;
+    width:24px;
+    height:24px;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    cursor:pointer;
+    font-weight:bold;
+}
+
+.close-btn:hover{
+    background:white;
+}
+
+/* IMAGE */
+
+#preview{
+    width:100%;
+    border-radius:10px;
+    border:2px solid #00eaff;
+    display:none;
+    margin-bottom:10px;
+}
+
+/* FILE INPUT BUTTON */
+
+.file-label{
+    display:block;
+    background:white;
+    color:#020617;
+    padding:10px;
+    border-radius:8px;
+    cursor:pointer;
+    font-weight:bold;
+    margin-bottom:10px;
+    text-align:center;
+}
+
+.file-label:hover{
+    background:#00eaff;
+}
+
+/* CHECK BUTTON */
+
+.check-btn{
+    width:100%;
+    padding:10px;
+    background:#00eaff;
+    color:#020617;
+    border:none;
+    border-radius:8px;
+    font-weight:bold;
+    cursor:pointer;
+    margin-bottom:10px;
+}
+
+.check-btn:hover{
+    background:white;
+}
+
+/* RESET BUTTON */
+
+.reset-btn{
+    width:100%;
+    padding:10px;
+    background:white;
+    color:#020617;
+    border:none;
+    border-radius:8px;
+    font-weight:bold;
+    cursor:pointer;
+    display:none;
+    margin-bottom:10px;
+}
+
+.reset-btn:hover{
+    background:#00eaff;
+}
+
+/* RESULT */
+
+.result{
+    text-align:center;
+    font-size:16px;
+    font-weight:bold;
+    margin-top:5px;
+}

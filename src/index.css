@@ -1,0 +1,65 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    background-color: #000;
+    color: #fff;
+    font-family: ui-sans-serif, system-ui, sans-serif;
+  }
+}
+/* Keep your animated gradient */
+.animated-gradient {
+  background: black;
+}
+
+/* Gentle shake animation for invalid fields */
+@keyframes gentleShake {
+  0% {
+    transform: translateX(0);
+  }
+  20% {
+    transform: translateX(-4px);
+  }
+  40% {
+    transform: translateX(4px);
+  }
+  60% {
+    transform: translateX(-3px);
+  }
+  80% {
+    transform: translateX(3px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.animate-gentle-shake {
+  animation: gentleShake 0.4s ease-in-out;
+}
+/* Whole scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track (background) */
+::-webkit-scrollbar-track {
+  background: #09090b; /* zinc-950 */
+}
+
+/* Scroll thumb (the draggable part) */
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(to bottom, #22d3ee, #06b6d4);
+  border-radius: 10px;
+  border: 2px solid #09090b;
+}
+
+/* Hover effect */
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(to bottom, #67e8f9, #22d3ee);
+}
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(to bottom, #22d3ee, #0891b2);
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(34, 211, 238, 0.7);
+}

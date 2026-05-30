@@ -1,0 +1,29 @@
+{
+  "manifest_version": 3,
+  "name": "Deepfake Detector AI",
+  "version": "1.0",
+  "description": "Detect deepfake images using AI",
+
+  "permissions": [
+    "storage",
+    "contextMenus",
+    "activeTab"
+  ],
+
+  "host_permissions": [
+    "http://127.0.0.1:5000/*",
+    "<all_urls>"
+  ],
+
+  "background": {
+    "service_worker": "background.js"
+  },
+
+  "action": {
+    "default_popup": "popup.html"
+  },
+
+  "icons": {
+    "128": "icon.png"
+  }
+}
